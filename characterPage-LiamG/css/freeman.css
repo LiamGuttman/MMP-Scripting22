@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Titillium+Web:wght@300&display=swap');
+
+body{
+    background-color:#282A29;
+    color:white;
+    font-family: 'Cairo', sans-serif;
+    margin:auto;
+    width:1090px;
+    position:relative;
+}
+
+header{
+    font-size:26px;
+}
+header p{
+    margin-top:-32px;
+}
+
+section{
+    background-color:#323232;
+    padding:20px;
+    margin-top:5px;
+    text-align:left;
+    overflow:auto;
+}
+
+/*NAV STUFF BEGINS*/
+nav{
+	border:medium solid;
+	border-color:#282A29;
+    font-size:18px;
+    word-spacing:16px;
+    transition-duration:0.2s;
+}
+
+.nav{
+    position:-webkit-sticky;
+    position:sticky;
+    top:0px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #323232;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #111;
+	color:orange;
+}
+
+nav:hover{
+    color:white;
+    font-size:20px;
+}
+
+nav:visited{
+    color:lightgray;
+    
+}
+/*NAV STUFF ENDS*/
+
+ul{
+    max-width: 1090px;
+}
+
+li{
+	padding:5px 0px;
+}
+li sup{
+    color:gray;
+}
+
+h2{
+    color:orange;
+	font-style:oblique;
+}
+
+p{
+	font-family: 'Titillium Web', sans-serif;
+    max-width:800px;
+}
+
+a{
+    color:#1A1A1A;
+    text-decoration:none;
+	transition-duration:0.2s;
+}
+a:hover{
+	font-size:125%;
+	color:darkred;
+}
+a:active{
+	font-size:100%;
+	color:black;
+}
+
+.right{
+    float:right;
+    width:320px;
+    
+}
+
+.left{
+    float:left;
+    width:680px;
+}
+
+#characteristics{
+	margin-bottom:100px;
+}
+
+footer{
+    background-color:#BB6328;
+    margin:150px 25px 0px 25px;
+    padding:45px;
+}
+footer sub{
+    
+    margin:50px 50px 0px;
+    padding:25px;
+}
