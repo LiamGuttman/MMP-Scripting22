@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+    max-width:1920px;
+}
+
+#masthead{
+    background-color:#00bc9b;
+}
+
+#portfolio{
+    background-image:url(../images/bgImages/background2.png);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+#portfolio img{
+    width:100%;
+    transition-duration:0.2s;
+}
+#portfolio img:hover{
+    width:98%;
+}
+
+#about{
+    background-color:#00bc9b;
+}
+
+#footer{
+    background-color:#273E54;
+}
+
+#copyright{
+    background-color:#162532;
+}
