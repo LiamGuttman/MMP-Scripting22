@@ -1,0 +1,80 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Roboto+Slab:wght@500&display=swap');
+
+body{
+	background-color:#7A5825;
+	background-image:url("../images/scandia-elevator-blurred.jpg"); /*image taken by Wilson Hui*/
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+}
+
+header{
+	background-color:#7A4900;
+}
+
+footer{
+	background-color:#7A4900;
+}
+
+nav{
+	background-color:#FBB54B;
+}
+
+h1, h2, h4{
+	font-family:"Roboto Slab";
+	font-size:38pt;
+}
+
+p{
+	font-family:"Barlow Condensed";
+	font-size:20pt;
+}
+
+a{
+	font-family:"Barlow Condensed";
+	font-size:20pt;
+	color:#C77700;
+	transition-duration:0.2s;
+}
+a:hover{
+	color:#FA9801;
+	font-size:21pt;
+	text-decoration:none;
+}
+
+li{
+	list-style:none;
+}
+
+.homebutton a{
+	color:black;
+}
+
+.darkbg{
+	background-color:rgb(0,0,0,0.45);
+}
+
+.homebutton{
+	background-color:#FBB54B;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+      background-image:url("../images/scandia-elevator-vertical.jpg");
+	  background-color:#7A5825;
+	  background-repeat:no-repeat;
+	  background-size:cover;
+	  background-position:center;
+    }
+	
+	p, a{
+	font-family:"Barlow Condensed";
+	font-size:22pt;
+	}
+	
+	h3{
+		font-size:20pt;
+	}
+}
