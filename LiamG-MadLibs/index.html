@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mad Libs</title>
+	
+<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+<!-- Custom CSS -->
+<link href="css/mlStyle.css" rel="stylesheet" type="text/css">
+
+<!-- jQuery library -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script> 
+	
+</head>
+
+<body>
+	<header>
+		<div class="container text-center py-5">
+			<h1>A Weird Adventure Begins</h1>
+			<h3>-A Mad Libs Short Story-</h3>
+		</div>
+	</header>
+	
+	<div id="HowTo" class="text-center py-3 text-white">
+		<h4>Fill in each line with a word to create a silly story!</h4>
+	</div>
+	
+	<div id="Form" class="text-center">
+		<form name="madLibs" action="Javascript:Start();" method="post">
+			<div class="container py-4">
+				<div class="row justify-content-center">
+					<div class="col-md-5">
+						<label for="word0" >Fictional Monster:</label>
+						<input type="text" id="word0" name="word0" required>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-center">
+					<div class="col-md-5">
+						<label for="word1" >Object that makes Sound:</label>
+						<input type="text" id="word1" name="word1" required>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-center">
+					<div class="col-md-5">
+						<label for="word2" >Animal:</label>
+						<input type="text" id="word2" name="word2" required>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-center">
+					<div class="col-md-5">
+						<label for="word3" >Action:</label>
+						<input type="text" id="word3" name="word3" required>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-center">
+					<div class="col-md-5">
+						<label for="word4" >Place - Fantasy:</label>
+						<input type="text" id="word4" name="word4" required>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-center">
+					<div class="col-md-5">
+						<label for="word5" >Weapon/Tool/Resource:</label>
+						<input type="text" id="word5" name="word5" required>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-center">
+					<div class="col-md-5">
+						<label for="word6" >Fantasy Being:</label>
+						<input type="text" id="word6" name="word6" required>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-center">
+					<div class="col-md-5">
+						<label for="word7" >Weapon:</label>
+						<input type="text" id="word7" name="word7" required>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-center">
+					<div class="col-md-5">
+						<label for="word8" >Musical Instrument:</label>
+						<input type="text" id="word8" name="word8" required>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-center">
+					<div class="col-md-5">
+						<label for="word9" >Song:</label>
+						<input type="text" id="word9" name="word9" required>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-center">
+					<div class="col-md-5">
+						<label for="word10">Least Favorite Food:</label>
+						<input type="text" id="word10" name="word10" required>
+					</div>
+				</div>
+				<br>
+				<div class="row justify-content-center">
+					<div class="col-md-5">
+						<label for="word11">Meal of the Day:</label>
+						<select name="eatTime" id="word11" required>
+							<option value="dinner">Dinner</option>
+							<option value="lunch">Lunch</option>
+							<option value="breakfast">Breakfast</option>
+						</select>
+					</div>
+				</div>
+				<br>
+				<a>
+					<input value="Create Story!" id="createButton" type="submit">
+				</a>
+			</div>
+		</form>
+	</div>
+	
+	
+	<!-- Custom JavaScript File -->
+	<script src="js/madLibs.js"></script>
+	
+	<section id="hiddenStuff story">
+		<div class="row justify-content-center  py-5">
+					<div class="col-md-8 text-center">
+						<p id="story"></p>
+					</div>
+		</div>
+	</section>
+
+	
+</body>
+</html>

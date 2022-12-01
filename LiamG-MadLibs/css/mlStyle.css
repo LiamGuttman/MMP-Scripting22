@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Roboto+Slab:wght@500&display=swap');
+
+.hiddenStuff{
+	display:none;
+}
+
+.leftText{
+	text-align:left;
+}
+
+.rightText{
+	text-align:right;
+}
+
+header{
+	background-color:#7B8BE3;
+	color:white;
+}
+
+#HowTo{
+	background-color:#94BFFA;
+}
+
+#Form{
+	background-color:#E2EEFF;
+}
+
+h1, h2, h3, h4{
+	font-family:"Roboto Slab";
+	
+}
+
+p, a, label{
+	font-family:"Barlow Condensed";
+	font-size:18pt;
+}
+
+@media only screen and (max-width:850px){
+	
+h1, h2, h3, h4{
+	font-size:20pt;
+}
+
+p, a, label{
+	font-family:"Barlow Condensed";
+	font-size:20pt;
+}
+}
+
+@media only screen and (min-width:851px){
+	
+h1, h2, h3, h4{
+	font-size:26pt;
+}
+
+p, a, label{
+	font-family:"Barlow Condensed";
+	font-size:22pt;
+}
+}
