@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Unbounded&display=swap');
+
+/*outside div that is wrapped around all customization divs needs to be relatively positioned with a set height*/
+#builder{
+    position: relative;
+    height: 640px;
+}
+
+/***ALL internal customization divs need to be positioned absolute to stack them up ****/
+#backplate, #body, #eyes, #skin, #mouth, #shirt{
+    position:absolute;
+}
+
+h1, h2, h3{
+	font-family:"Press Start 2P";
+}
+
+p, a, h4{
+	font-family:"Unbounded";
+}
+
+li{
+	font-family:"Press Start 2P";
+	font-size:12pt;
+}
+
+.thumb{
+	border:solid grey;
+	padding:2px;
+	background-color:lightgrey;
+	transition-duration:0.1s;
+}
+.thumb:hover{
+	border:solid black;
+	background-color:grey;
+}
+
+.result{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
+.avatarList{
+	height:650px;
+}
+
+/*color related shenanigans*/
+#backplate{
+	background-color:beige;
+}

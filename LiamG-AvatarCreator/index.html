@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avatar Creator</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+	
+	<!--MY CSS-->
+	<link href="css/avatarStyle.css" rel="stylesheet" type="text/css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script> 
+	
+	
+
+
+</head>
+<body>
+    
+    <header class="bg-danger text-center py-2">
+        <div class="container py-3">
+            <div class="row py-2">
+                <div class="col-sm-6 mx-auto text-white py-2">
+                    <h1>Create an Avatar!</h1>
+					<p>Click one of the images in each category to build yourself an avatar!</p>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="row">
+				
+                <div class="col-sm-6 card overflow-auto avatarList">
+					<!--this is where the thumbnail buttons will go-->
+                    <h4 class="py-3">Background</h4>
+					<div class="backplates">
+						<img onClick="setBP('background/backgrounds1.png');" src="images/thumbs/background/backgrounds1.png" alt="backplateSelection" class="thumb">
+						<img onClick="setBP('background/backgrounds2.png');" src="images/thumbs/background/backgrounds2.png" alt="backplateSelection" class="thumb">
+						<img onClick="setBP('background/backgrounds3.png');" src="images/thumbs/background/backgrounds3.png" alt="backplateSelection" class="thumb">
+						<img onClick="setBP('background/backgrounds4.png');" src="images/thumbs/background/backgrounds4.png" alt="backplateSelection" class="thumb">
+						<img onClick="setBP('background/backgrounds5.png');" src="images/thumbs/background/backgrounds5.png" alt="backplateSelection" class="thumb">
+						<img onClick="setBP('background/backgrounds6.png');" src="images/thumbs/background/backgrounds6.png" alt="backplateSelection" class="thumb">
+						<img onClick="setBP('background/backgrounds7.png');" src="images/thumbs/background/backgrounds7.png" alt="backplateSelection" class="thumb">
+						<img onClick="setBP('background/backgrounds8.png');" src="images/thumbs/background/backgrounds8.png" alt="backplateSelection" class="thumb">
+						<img onClick="setBP('background/backgrounds9.png');" src="images/thumbs/background/backgrounds9.png" alt="backplateSelection" class="thumb">
+						<img onClick="setBP('background/backgrounds10.png');" src="images/thumbs/background/backgrounds10.png" alt="backplateSelection" class="thumb">
+					</div>
+					
+					<br>
+					<div class="body">
+						<h4 class="py-3">Body</h4>
+						<img onClick="setBody('body.png');" src="images/thumbs/body.png" alt="bodySelection" class="thumb">
+					</div>
+					
+					<br>
+					<div class="skin">
+                    <h4 class="py-3">Skin</h4>
+						<img onClick="setSkin('/skin/skin1.png');" src="images/thumbs/skin/skin1.png" alt="skinSelection" class="thumb">
+						<img onClick="setSkin('/skin/skin2.png');" src="images/thumbs/skin/skin2.png" alt="skinSelection" class="thumb">
+						<img onClick="setSkin('/skin/skin3.png');" src="images/thumbs/skin/skin3.png" alt="skinSelection" class="thumb">
+						<img onClick="setSkin('/skin/skin4.png');" src="images/thumbs/skin/skin4.png" alt="skinSelection" class="thumb">
+						<img onClick="setSkin('/skin/skin5.png');" src="images/thumbs/skin/skin5.png" alt="skinSelection" class="thumb">
+						<img onClick="setSkin('/skin/skin6.png');" src="images/thumbs/skin/skin6.png" alt="skinSelection" class="thumb">
+						<img onClick="setSkin('/skin/skin7.png');" src="images/thumbs/skin/skin7.png" alt="skinSelection" class="thumb">
+						<img onClick="setSkin('/skin/skin8.png');" src="images/thumbs/skin/skin8.png" alt="skinSelection" class="thumb">
+						<img onClick="setSkin('/skin/skin9.png');" src="images/thumbs/skin/skin9.png" alt="skinSelection" class="thumb">
+						<img onClick="setSkin('/skin/skin10.png');" src="images/thumbs/skin/skin10.png" alt="skinSelection" class="thumb">
+					</div>
+					
+					<br>
+					
+					<div class="shirts">
+						<h4 class="py-3">Shirt</h4>
+						<img onClick="setShirt('/shirt/shirt1.png');" src="images/thumbs/shirt/shirt1.png" alt="shirtSelection" class="thumb">
+						<img onClick="setShirt('/shirt/shirt2.png');" src="images/thumbs/shirt/shirt2.png" alt="shirtSelection" class="thumb">
+						<img onClick="setShirt('/shirt/shirt3.png');" src="images/thumbs/shirt/shirt3.png" alt="shirtSelection" class="thumb">
+						<img onClick="setShirt('/shirt/shirt4.png');" src="images/thumbs/shirt/shirt4.png" alt="shirtSelection" class="thumb">
+						<img onClick="setShirt('/shirt/shirt5.png');" src="images/thumbs/shirt/shirt5.png" alt="shirtSelection" class="thumb">
+						<img onClick="setShirt('/shirt/shirt6.png');" src="images/thumbs/shirt/shirt6.png" alt="shirtSelection" class="thumb">
+						<img onClick="setShirt('/shirt/shirt7.png');" src="images/thumbs/shirt/shirt7.png" alt="shirtSelection" class="thumb">
+						<img onClick="setShirt('/shirt/shirt8.png');" src="images/thumbs/shirt/shirt8.png" alt="shirtSelection" class="thumb">
+						<img onClick="setShirt('/shirt/shirt9.png');" src="images/thumbs/shirt/shirt9.png" alt="shirtSelection" class="thumb">
+						<img onClick="setShirt('/shirt/shirt10.png');" src="images/thumbs/shirt/shirt10.png" alt="shirtSelection" class="thumb">
+					</div>
+					
+					<br>
+					
+					<div class="eyes">
+						<h4 class="py-3">Eyes</h4>
+						<img onClick="setEyes('/eyes/eyes1.png');" src="images/thumbs/eyes/eyes1.png" alt="eyesSelection" class="thumb">
+						<img onClick="setEyes('/eyes/eyes2.png');" src="images/thumbs/eyes/eyes2.png" alt="eyesSelection" class="thumb">
+						<img onClick="setEyes('/eyes/eyes3.png');" src="images/thumbs/eyes/eyes3.png" alt="eyesSelection" class="thumb">
+						<img onClick="setEyes('/eyes/eyes4.png');" src="images/thumbs/eyes/eyes4.png" alt="eyesSelection" class="thumb">
+						<img onClick="setEyes('/eyes/eyes5.png');" src="images/thumbs/eyes/eyes5.png" alt="eyesSelection" class="thumb">
+						<img onClick="setEyes('/eyes/eyes6.png');" src="images/thumbs/eyes/eyes6.png" alt="eyesSelection" class="thumb">
+						<img onClick="setEyes('/eyes/eyes7.png');" src="images/thumbs/eyes/eyes7.png" alt="eyesSelection" class="thumb">
+						<img onClick="setEyes('/eyes/eyes8.png');" src="images/thumbs/eyes/eyes8.png" alt="eyesSelection" class="thumb">
+						<img onClick="setEyes('/eyes/eyes9.png');" src="images/thumbs/eyes/eyes9.png" alt="eyesSelection" class="thumb">
+						<img onClick="setEyes('/eyes/eyes10.png');" src="images/thumbs/eyes/eyes10.png" alt="eyesSelection" class="thumb">
+					</div>
+						
+					<br>
+					
+					<div class="mouths">
+						<h4 class="py-3">Mouth</h4>
+						<img onClick="setMouth('/mouth/mouth1.png');" src="images/thumbs/mouth/mouth1.png" alt="mouthSelection" class="thumb">
+						<img onClick="setMouth('/mouth/mouth2.png');" src="images/thumbs/mouth/mouth2.png" alt="mouthSelection" class="thumb">
+						<img onClick="setMouth('/mouth/mouth3.png');" src="images/thumbs/mouth/mouth3.png" alt="mouthSelection" class="thumb">
+						<img onClick="setMouth('/mouth/mouth4.png');" src="images/thumbs/mouth/mouth4.png" alt="mouthSelection" class="thumb">
+						<img onClick="setMouth('/mouth/mouth5.png');" src="images/thumbs/mouth/mouth5.png" alt="mouthSelection" class="thumb">
+						<img onClick="setMouth('/mouth/mouth6.png');" src="images/thumbs/mouth/mouth6.png" alt="mouthSelection" class="thumb">
+						<img onClick="setMouth('/mouth/mouth7.png');" src="images/thumbs/mouth/mouth7.png" alt="mouthSelection" class="thumb">
+						<img onClick="setMouth('/mouth/mouth8.png');" src="images/thumbs/mouth/mouth8.png" alt="mouthSelection" class="thumb">
+						<img onClick="setMouth('/mouth/mouth9.png');" src="images/thumbs/mouth/mouth9.png" alt="mouthSelection" class="thumb">
+						<img onClick="setMouth('/mouth/mouth10.png');" src="images/thumbs/mouth/mouth10.png" alt="mouthSelection" class="thumb">
+					</div>
+					
+                </div>
+
+                    
+                <div class="col-sm-6 bg-dark text-white card float-right">
+                    <h4 class="py-3">Result</h4>
+                    <div id="builder">
+                        <!--order matters - first div is behind others-->
+						<div id="backplate"></div>
+						<div id="skin"></div>
+						<div id="shirt"></div>
+						<div id="body"></div>
+						<div id="eyes"></div>
+						<div id="mouth"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+	<section>
+		<div class="container">
+            <div class="row">
+                <div class="col-sm-12 card bg-danger text-white">
+					<h2 class="py-3 text-center">Learning Reflection</h2>
+					<ul>
+					<li>What moments were you most proud of your efforts in this course? Why?</li>
+						<p>I was really proud of my work on the Hometown Assignment. I got to put together this sort of "time capsule" of my real hometown, and it was really fun. I used the skills I had started building with previous assignments and tried to crank that up to 11. I felt like the color scheme was a great choice.</p>
+					<li>Provide an example of a tough situation or barrier you handled well in this course and the key strengths you relied on.</li>
+						<p>Learning JavaScript was a bit of a hard learning curve. I was super sick during the week we really started digging into it, so it was tough to get a good grasp on learning it. I've finally started understanding it, but it's probably going to take a bit longer to really get used to it.</p>
+					<li>If you could do anything in this course over again, what, if anything, would you change?</li>
+						<p>I would probably go back and add more detail into my Mad Libs page. I was running out of time and totally rushed it. I am not afraid to admit that. At least it functioned like it was supposed to. That's probably the best part.</p>
+					<li>What actions/behaviours should you start doing that would help you in future courses?</li>
+						<p>I should probably have a bookmark directly to w3schools, instead of having to type or search it. It's extremely useful and I don't know why I haven't done this yet. I also need to look into finding extra sources for learning code stuff.</p>
+				</ul>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+
+    <footer class="bg-dark text-white py-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <p>Created by Liam Guttman: <a href="https://liamguttman.github.io/MMP-Scripting22/" target="_blank">About Me</a></p>
+                    
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/imageSwapper.js"></script>
+    
+</body>
+</html>
+
+
+
